@@ -1,10 +1,10 @@
 import React from "react";
-import { Form } from "semantic-ui-react";
+import {  } from "semantic-ui-react";
 
-function PokemonForm() {
+function //() {
   return (
     <div>
-      <h3>Add a Pokemon!</h3>
+      <h3>Add !</h3>
       <Form
         onSubmit={() => {
           console.log("submitting form...");
@@ -32,4 +32,4 @@ function PokemonForm() {
   );
 }
 
-export default PokemonForm;
+export default //;

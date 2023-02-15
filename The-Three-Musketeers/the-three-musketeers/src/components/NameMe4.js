@@ -1,13 +1,29 @@
-import React from "react";
+import React from 'react';
 
-import {  } from "semantic-ui-react";
+const scaleNames = {
+ c: 'Celsius',
+ f: 'Fahrenheit'
+};
 
-function PokemonPage() {
-  return (
-    <Container>
-  
-    </Container>
-  );
+
+const TemperatureInput = (props) => {
+ const handleChange = (e) => {
+  console.log(e.target.value)
+  props.onTemperatureChange(e.target.value)
+ }
+
+ return (
+  <div>
+   <label htmlFor={props.scale}>Enter temperature in {scaleNames[props.scale]}</label>
+   <br/>
+   <input 
+    id={props.scale}
+    placeholder={Temperature in $[props.scale]}
+    onChange={handleChange}
+    value={props.temperature}
+   />
+  </div>
+ )
 }
 
-export default //;
+export default TemperatureInput
